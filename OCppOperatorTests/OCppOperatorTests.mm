@@ -66,7 +66,7 @@ using namespace std;
     try {
         @autoreleasepool {
             id object = ID();
-            STAssertNil(object, @"");
+            STAssertNil(object, @"IDクラスの初期化処理が不正です");
         }
     } catch (exception e) {
         STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
