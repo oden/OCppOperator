@@ -7,6 +7,10 @@
 //
 
 #import "OCppOperatorTests.h"
+#import "OCppOperator.h"
+#import <exception>
+
+using namespace std;
 
 @implementation OCppOperatorTests
 
@@ -24,9 +28,16 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testInitialize
 {
-    STFail(@"Unit tests are not implemented yet in OCppOperatorTests");
+    try
+    {
+        ID object = ID();
+    }
+    catch(exception& e)
+    {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
 }
 
 @end
