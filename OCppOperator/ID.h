@@ -10,7 +10,10 @@
 
 class ID
 {
+private:
+    id object;
 public:
-    ID();
+    ID(const id = nil);
     ~ID();
+    operator id();
 };
