@@ -17,3 +17,8 @@ ID::~ID()
 {
     [this->object release];
 }
+
+ID::operator id()
+{
+    return this->object;
+}

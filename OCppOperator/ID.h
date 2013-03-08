@@ -15,4 +15,5 @@ private:
 public:
     ID(const id = nil);
     ~ID();
+    operator id();
 };
