@@ -41,7 +41,7 @@
 		F819CBD416E96B26006BF5A5 /* OCppOperatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCppOperatorTests-Info.plist"; sourceTree = "<group>"; };
 		F819CBD616E96B26006BF5A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F819CBD816E96B26006BF5A5 /* OCppOperatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCppOperatorTests.h; sourceTree = "<group>"; };
-		F819CBD916E96B26006BF5A5 /* OCppOperatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCppOperatorTests.m; sourceTree = "<group>"; };
+		F819CBD916E96B26006BF5A5 /* OCppOperatorTests.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = OCppOperatorTests.m; sourceTree = "<group>"; };
 		F819CBE316E975AF006BF5A5 /* OCppOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCppOperator.h; sourceTree = "<group>"; };
 		F819CBE516E97600006BF5A5 /* ID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ID.h; sourceTree = "<group>"; };
 		F819CBE616E97600006BF5A5 /* ID.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ID.mm; sourceTree = "<group>"; };
