@@ -8,6 +8,12 @@
 
 #import "ID.h"
 
-@implementation ID
+ID::ID()
+{
+    
+}
 
-@end
+ID::~ID()
+{
+    
+}

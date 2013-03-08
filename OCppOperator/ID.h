@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ID : NSObject
-
-@end
+class ID
+{
+public:
+    ID();
+    ~ID();
+};
