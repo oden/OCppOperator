@@ -10,6 +10,8 @@
 
 class ID
 {
+private:
+    id object;
 public:
     ID();
     ~ID();
