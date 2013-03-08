@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ID.h"
 
-@interface NSObject (OCppOperator)
+@interface NSObject(OCppOperator)
+
+@property (nonatomic, readonly) ID ID;
 
 @end

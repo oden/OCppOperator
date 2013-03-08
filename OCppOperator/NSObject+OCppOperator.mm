@@ -8,6 +8,11 @@
 
 #import "NSObject+OCppOperator.h"
 
-@implementation NSObject (OCppOperator)
+@implementation NSObject(OCppOperator)
+
+-(ID)ID
+{
+    return self;
+}
 
 @end
