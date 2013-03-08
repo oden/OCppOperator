@@ -52,10 +52,9 @@ using namespace std;
 - (void)testObjC2CppMRC
 {
     try {
-        ID object = nil;
         @autoreleasepool {
             ID object = @"test";
-            STAssertTrue(1 != [object retainCount], @"");
+            STAssertTrue(1 != [object retainCount], @"不正なretainCount値です");
         }
     } catch (exception& e) {
         STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
