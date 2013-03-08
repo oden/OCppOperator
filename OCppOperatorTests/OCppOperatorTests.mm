@@ -73,4 +73,20 @@ using namespace std;
     }
 }
 
+- (void)testPlusOperation
+{
+    try
+    {
+        @autoreleasepool
+        {
+            ID object = (ID)@"a" + @"b" + @(1) + @(3.14);
+            STAssertEqualObjects(object, @"ab13.14", @"operator+(id)が失敗しました");
+        }
+    }
+    catch(exception e)
+    {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
+}
+
 @end

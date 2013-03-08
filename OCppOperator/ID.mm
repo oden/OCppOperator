@@ -8,9 +8,9 @@
 
 #import "ID.h"
 
-ID::ID(const id object)
+ID::ID(const id source)
 {
-    this->object = [object retain];
+    this->object = [source retain];
 }
 
 ID::~ID()
@@ -18,7 +18,14 @@ ID::~ID()
     [this->object release];
 }
 
+#pragma mark - Operators
+
 ID::operator id()
 {
     return this->object;
+}
+
+ID ID::operator+(const id source)
+{
+    return [[this->object description] stringByAppendingFormat:@"%@", source];
 }
