@@ -40,4 +40,26 @@ using namespace std;
     }
 }
 
+- (void)testObjC2Cpp
+{
+    try {
+        ID object = @"test";
+    } catch (exception& e) {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
+}
+
+- (void)testObjC2CppMRC
+{
+    try {
+        ID object = nil;
+        @autoreleasepool {
+            ID object = @"test";
+            STAssertTrue(1 != [object retainCount], @"");
+        }
+    } catch (exception& e) {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
+}
+
 @end
