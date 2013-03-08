@@ -8,12 +8,12 @@
 
 #import "ID.h"
 
-ID::ID()
+ID::ID(const id object)
 {
-    
+    this->object = [object retain];
 }
 
 ID::~ID()
 {
-    
+    [this->object release];
 }
