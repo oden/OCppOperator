@@ -14,6 +14,7 @@
 		F819CBD116E96B26006BF5A5 /* OCppOperator.framework in Resources */ = {isa = PBXBuildFile; fileRef = F819CBB916E96B26006BF5A5 /* OCppOperator.framework */; };
 		F819CBD716E96B26006BF5A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F819CBD516E96B26006BF5A5 /* InfoPlist.strings */; };
 		F819CBDA16E96B26006BF5A5 /* OCppOperatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F819CBD916E96B26006BF5A5 /* OCppOperatorTests.m */; };
+		F819CBE416E975CC006BF5A5 /* OCppOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F819CBE316E975AF006BF5A5 /* OCppOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		F819CBD616E96B26006BF5A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F819CBD816E96B26006BF5A5 /* OCppOperatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCppOperatorTests.h; sourceTree = "<group>"; };
 		F819CBD916E96B26006BF5A5 /* OCppOperatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCppOperatorTests.m; sourceTree = "<group>"; };
+		F819CBE316E975AF006BF5A5 /* OCppOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCppOperator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		F819CBBB16E96B26006BF5A5 /* OCppOperator */ = {
 			isa = PBXGroup;
 			children = (
+				F819CBE316E975AF006BF5A5 /* OCppOperator.h */,
 				F819CBBC16E96B26006BF5A5 /* Supporting Files */,
 			);
 			path = OCppOperator;
@@ -135,6 +138,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F819CBE416E975CC006BF5A5 /* OCppOperator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
