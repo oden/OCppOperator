@@ -89,4 +89,21 @@ using namespace std;
     }
 }
 
+- (void)testPlusEqualOperation
+{
+    try
+    {
+        @autoreleasepool
+        {
+            ID object = @"abc";
+            object += @"def";
+            STAssertEqualObjects(object, @"abcdef", @"operator+=(id)が失敗しました");
+        }
+    }
+    catch(exception e)
+    {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
+}
+
 @end

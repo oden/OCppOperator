@@ -17,4 +17,5 @@ public:
     ~ID();
     operator id();
     ID operator+(const id);
+    ID& operator+=(ID);
 };
