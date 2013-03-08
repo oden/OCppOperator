@@ -105,4 +105,14 @@ using namespace std;
     }
 }
 
+- (void)testNSObjectProperty
+{
+    try {
+        ID object = @"abcd".ID + @"efg" + @(50);
+        STAssertEqualObjects(object, @"abcdefg50", @"NSObject.IDが失敗しました");
+    } catch (exception e) {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
+}
+
 @end

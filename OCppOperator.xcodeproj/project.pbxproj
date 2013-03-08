@@ -17,6 +17,8 @@
 		F819CBE416E975CC006BF5A5 /* OCppOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F819CBE316E975AF006BF5A5 /* OCppOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F819CBE716E97600006BF5A5 /* ID.h in Headers */ = {isa = PBXBuildFile; fileRef = F819CBE516E97600006BF5A5 /* ID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F819CBE816E97600006BF5A5 /* ID.mm in Sources */ = {isa = PBXBuildFile; fileRef = F819CBE616E97600006BF5A5 /* ID.mm */; };
+		F8B622A016E9C9A80006543E /* NSObject+OCppOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B6229E16E9C9A80006543E /* NSObject+OCppOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8B622A116E9C9A80006543E /* NSObject+OCppOperator.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8B6229F16E9C9A80006543E /* NSObject+OCppOperator.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		F819CBE316E975AF006BF5A5 /* OCppOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCppOperator.h; sourceTree = "<group>"; };
 		F819CBE516E97600006BF5A5 /* ID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ID.h; sourceTree = "<group>"; };
 		F819CBE616E97600006BF5A5 /* ID.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ID.mm; sourceTree = "<group>"; };
+		F8B6229E16E9C9A80006543E /* NSObject+OCppOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+OCppOperator.h"; sourceTree = "<group>"; };
+		F8B6229F16E9C9A80006543E /* NSObject+OCppOperator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject+OCppOperator.mm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				F819CBE316E975AF006BF5A5 /* OCppOperator.h */,
 				F819CBE516E97600006BF5A5 /* ID.h */,
 				F819CBE616E97600006BF5A5 /* ID.mm */,
+				F8B6229E16E9C9A80006543E /* NSObject+OCppOperator.h */,
+				F8B6229F16E9C9A80006543E /* NSObject+OCppOperator.mm */,
 				F819CBBC16E96B26006BF5A5 /* Supporting Files */,
 			);
 			path = OCppOperator;
@@ -146,6 +152,7 @@
 			files = (
 				F819CBE416E975CC006BF5A5 /* OCppOperator.h in Headers */,
 				F819CBE716E97600006BF5A5 /* ID.h in Headers */,
+				F8B622A016E9C9A80006543E /* NSObject+OCppOperator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F819CBE816E97600006BF5A5 /* ID.mm in Sources */,
+				F8B622A116E9C9A80006543E /* NSObject+OCppOperator.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
