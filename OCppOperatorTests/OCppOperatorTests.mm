@@ -53,10 +53,22 @@ using namespace std;
 {
     try {
         @autoreleasepool {
-            ID object = @"test";
-            STAssertTrue(1 != [object retainCount], @"不正なretainCount値です");
+            ID object = [[[NSObject alloc] init] autorelease];
+            STAssertTrue([object retainCount] == 2, @"不正なretainCount値です");
         }
     } catch (exception& e) {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
+}
+
+- (void)testCpp2ObjC
+{
+    try {
+        @autoreleasepool {
+            id object = ID();
+            STAssertNil(object, @"");
+        }
+    } catch (exception e) {
         STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
     }
 }
