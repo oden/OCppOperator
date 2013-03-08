@@ -34,7 +34,7 @@ using namespace std;
     {
         ID object = ID();
     }
-    catch(exception& e)
+    catch(exception e)
     {
         STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
     }
@@ -42,33 +42,38 @@ using namespace std;
 
 - (void)testObjC2Cpp
 {
-    try {
+    try
+    {
         ID object = @"test";
-    } catch (exception& e) {
+    }
+    catch(exception e)
+    {
         STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
     }
 }
 
 - (void)testObjC2CppMRC
 {
-    try {
-        @autoreleasepool {
-            ID object = [[[NSObject alloc] init] autorelease];
-            STAssertTrue([object retainCount] == 2, @"不正なretainCount値です");
-        }
-    } catch (exception& e) {
+    try
+    {
+        ID object = [[[NSObject alloc] init] autorelease];
+        STAssertTrue([object retainCount] == 2, @"不正なretainCount値です");
+    }
+    catch(exception e)
+    {
         STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
     }
 }
 
 - (void)testCpp2ObjC
 {
-    try {
-        @autoreleasepool {
-            id object = ID();
-            STAssertNil(object, @"IDクラスの初期化処理が不正です");
-        }
-    } catch (exception e) {
+    try
+    {
+        id object = ID();
+        STAssertNil(object, @"IDクラスの初期化処理が不正です");
+    }
+    catch(exception e)
+    {
         STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
     }
 }
@@ -77,11 +82,22 @@ using namespace std;
 {
     try
     {
-        @autoreleasepool
-        {
-            ID object = (ID)@"a" + @"b" + @(1) + @(3.14);
-            STAssertEqualObjects(object, @"ab13.14", @"operator+(id)が失敗しました");
-        }
+        ID object = (ID)@"a" + @"b" + @(1) + @(3.14);
+        STAssertEqualObjects(object, @"ab13.14", @"operator+(id)が失敗しました");
+    }
+    catch(exception e)
+    {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
+}
+
+- (void)testPlusEqualOperation
+{
+    try
+    {
+        ID object = @"abc";
+        object += @"def";
+        STAssertEqualObjects(object, @"abcdef", @"operator+=(id)が失敗しました");
     }
     catch(exception e)
     {

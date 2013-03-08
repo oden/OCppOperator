@@ -29,3 +29,10 @@ ID ID::operator+(const id source)
 {
     return [[this->object description] stringByAppendingFormat:@"%@", source];
 }
+
+ID& ID::operator+=(ID source)
+{
+    [this->object release];
+    this->object = [[*this stringByAppendingFormat:@"%@", (id)source] retain];
+    return *this;
+}
