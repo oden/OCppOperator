@@ -17,7 +17,7 @@
 		F819CBE416E975CC006BF5A5 /* OCppOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F819CBE316E975AF006BF5A5 /* OCppOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F819CBE716E97600006BF5A5 /* ID.h in Headers */ = {isa = PBXBuildFile; fileRef = F819CBE516E97600006BF5A5 /* ID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F819CBE816E97600006BF5A5 /* ID.mm in Sources */ = {isa = PBXBuildFile; fileRef = F819CBE616E97600006BF5A5 /* ID.mm */; };
-		F8B622A016E9C9A80006543E /* NSObject+OCppOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B6229E16E9C9A80006543E /* NSObject+OCppOperator.h */; };
+		F8B622A016E9C9A80006543E /* NSObject+OCppOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B6229E16E9C9A80006543E /* NSObject+OCppOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8B622A116E9C9A80006543E /* NSObject+OCppOperator.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8B6229F16E9C9A80006543E /* NSObject+OCppOperator.mm */; };
 /* End PBXBuildFile section */
 
