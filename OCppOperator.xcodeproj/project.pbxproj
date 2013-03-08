@@ -15,6 +15,8 @@
 		F819CBD716E96B26006BF5A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F819CBD516E96B26006BF5A5 /* InfoPlist.strings */; };
 		F819CBDA16E96B26006BF5A5 /* OCppOperatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F819CBD916E96B26006BF5A5 /* OCppOperatorTests.m */; };
 		F819CBE416E975CC006BF5A5 /* OCppOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = F819CBE316E975AF006BF5A5 /* OCppOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F819CBE716E97600006BF5A5 /* ID.h in Headers */ = {isa = PBXBuildFile; fileRef = F819CBE516E97600006BF5A5 /* ID.h */; };
+		F819CBE816E97600006BF5A5 /* ID.mm in Sources */ = {isa = PBXBuildFile; fileRef = F819CBE616E97600006BF5A5 /* ID.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		F819CBD816E96B26006BF5A5 /* OCppOperatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCppOperatorTests.h; sourceTree = "<group>"; };
 		F819CBD916E96B26006BF5A5 /* OCppOperatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCppOperatorTests.m; sourceTree = "<group>"; };
 		F819CBE316E975AF006BF5A5 /* OCppOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCppOperator.h; sourceTree = "<group>"; };
+		F819CBE516E97600006BF5A5 /* ID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ID.h; sourceTree = "<group>"; };
+		F819CBE616E97600006BF5A5 /* ID.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ID.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				F819CBE316E975AF006BF5A5 /* OCppOperator.h */,
+				F819CBE516E97600006BF5A5 /* ID.h */,
+				F819CBE616E97600006BF5A5 /* ID.mm */,
 				F819CBBC16E96B26006BF5A5 /* Supporting Files */,
 			);
 			path = OCppOperator;
@@ -139,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F819CBE416E975CC006BF5A5 /* OCppOperator.h in Headers */,
+				F819CBE716E97600006BF5A5 /* ID.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F819CBE816E97600006BF5A5 /* ID.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
