@@ -170,6 +170,7 @@
 				F819CBB516E96B26006BF5A5 /* Resources */,
 				F819CBB616E96B26006BF5A5 /* ShellScript */,
 				F819CBB716E96B26006BF5A5 /* ShellScript */,
+				F8043C5216ED90C000836EF9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -247,6 +248,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		F8043C5216ED90C000836EF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DOCDIR=Docs\nrm -rf $DOCDIR\nmkdir -p $DOCDIR\nheaderdoc2html -o $DOCDIR .\ngatherheaderdoc $DOCDIR\nmv $DOCDIR/masterTOC.html $DOCDIR/index.html";
+		};
 		F819CBB116E96B26006BF5A5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

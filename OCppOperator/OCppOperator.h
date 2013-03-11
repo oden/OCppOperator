@@ -6,5 +6,9 @@
 //  Copyright (c) 2013年 JITAKUKEIBI INC. All rights reserved.
 //
 
+/*!
+ @header OCppOperator.h
+ @abstract このヘッダだけ#importすればおｋですお(≖ิൠ≖ิ)
+ */
 #import "ID.h"
 #import "NSObject+OCppOperator.h"
