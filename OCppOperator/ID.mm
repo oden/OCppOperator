@@ -20,17 +20,17 @@ ID::~ID()
 
 #pragma mark - Operators
 
-ID::operator id()
+ID::operator const id() const
 {
     return this->object;
 }
 
-ID ID::operator+(const id source)
+ID ID::operator+(const id source) const
 {
     return [[this->object description] stringByAppendingFormat:@"%@", source];
 }
 
-ID& ID::operator+=(ID source)
+ID& ID::operator+=(const id source)
 {
     [this->object autorelease];
     this->object = [[*this stringByAppendingFormat:@"%@", (id)source] retain];

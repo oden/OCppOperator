@@ -50,7 +50,7 @@ public:
      @return id
      @abstract objectフィールド。
      */
-    operator id();
+    operator const id() const;
     /*!
      @method operator+
      @abstract 加算演算子オーバーロード。
@@ -58,13 +58,13 @@ public:
      @param id
      @return ID
      */
-    ID operator+(const id);
+    ID operator+(const id) const;
     /*!
      @method operator+=
      @abstract 加算後代入演算子オーバーロード。
      @discussion objectフィールドのdescription文字列と引数のdescription文字列を結合する。
-     @param ID
+     @param id
      @return ID&
      */
-    ID& operator+=(const ID);
+    ID& operator+=(const id);
 };
