@@ -383,7 +383,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -406,7 +406,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -427,6 +427,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCppOperator/OCppOperator-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "OCppOperator/OCppOperator-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
@@ -450,6 +451,7 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCppOperator/OCppOperator-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "OCppOperator/OCppOperator-Info.plist";
 				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
@@ -471,6 +473,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCppOperator/OCppOperator-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "OCppOperatorTests/OCppOperatorTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -492,6 +495,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCppOperator/OCppOperator-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "OCppOperatorTests/OCppOperatorTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
