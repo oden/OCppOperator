@@ -1,5 +1,5 @@
 //
-//  ID.m
+//  ID.mm
 //  OCppOperator
 //
 //  Created by oden on 13/03/08.
@@ -32,7 +32,7 @@ ID ID::operator+(const id source)
 
 ID& ID::operator+=(ID source)
 {
-    [this->object release];
+    [this->object autorelease];
     this->object = [[*this stringByAppendingFormat:@"%@", (id)source] retain];
     return *this;
 }
