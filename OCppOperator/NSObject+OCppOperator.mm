@@ -1,5 +1,5 @@
 //
-//  NSObject+OCppOperator.m
+//  NSObject+OCppOperator.mm
 //  OCppOperator
 //
 //  Created by oden on 13/03/08.
