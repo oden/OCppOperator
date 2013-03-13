@@ -95,8 +95,8 @@ using namespace std;
 {
     try
     {
-        ID object = (ID)@(1) + @(3.14);
-        STAssertEqualObjects(object, @(4.14), @"operator+(NSNumber*)が失敗しました");
+        ID object = (ID)@(1) + @(3.14) + (id)@(50);
+        STAssertEqualObjects(object, @(54.14), @"operator+(NSNumber*)が失敗しました");
     }
     catch(exception e)
     {

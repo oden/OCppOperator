@@ -32,6 +32,11 @@ ID::operator const id() const
 
 ID ID::operator+(const id source) const
 {
+    if ([*this isKindOfClass:[NSNumber class]] &&
+        [source isKindOfClass:[NSNumber class]])
+    {
+        return *this + (NSNumber*)source;
+    }
     return [[this->object description] stringByAppendingFormat:@"%@", source];
 }
 
