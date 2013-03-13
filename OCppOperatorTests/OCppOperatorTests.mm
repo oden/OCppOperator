@@ -91,6 +91,19 @@ using namespace std;
     }
 }
 
+- (void)testPlusNSNumberOperation
+{
+    try
+    {
+        ID object = (ID)@(1) + @(3.14);
+        STAssertEqualObjects(object, @(4.14), @"operator+(NSNumber*)が失敗しました");
+    }
+    catch(exception e)
+    {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
+}
+
 - (void)testPlusEqualOperation
 {
     try
