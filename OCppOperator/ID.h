@@ -67,6 +67,14 @@ public:
      */
     ID operator+(const id) const;
     /*!
+     @method operator+
+     @abstract 加算演算子オーバーロード。
+     @discussion objectフィールドのdescription文字列と引数のdescription文字列を結合する。
+     @param number
+     @return ID
+     */
+    ID operator+(const NSNumber* const number) const;
+    /*!
      @method operator+=
      @abstract 加算後代入演算子オーバーロード。
      @discussion objectフィールドのdescription文字列と引数のdescription文字列を結合する。

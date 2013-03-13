@@ -35,6 +35,18 @@ ID ID::operator+(const id source) const
     return [[this->object description] stringByAppendingFormat:@"%@", source];
 }
 
+ID ID::operator+(const NSNumber* const number) const
+{
+    if (![*this isKindOfClass:[NSNumber class]])
+    {
+        return *this + (id)number;
+    }
+    
+    id left = [NSDecimalNumber decimalNumberWithString:[*this description]];
+    id right = [NSDecimalNumber decimalNumberWithString:[number description]];
+    return [left decimalNumberByAdding:right];
+}
+
 ID& ID::operator+=(const id source)
 {
     [*this autorelease];
