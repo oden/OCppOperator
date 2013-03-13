@@ -32,7 +32,7 @@ private:
 public:
     /*!
      @method ID
-     @abstract コピーコンストラクタ。
+     @abstract コンストラクタ。デフォルトコンストラクタ兼コピーコンストラクタ
      @discussion id型からの暗黙の型変換を実現している。
      @param id 無指定の場合、nil。暗黙の型変換により、ID型を渡すこともできる。渡されたオブジェクトはretainされる。
      */
