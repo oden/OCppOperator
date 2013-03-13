@@ -30,7 +30,7 @@ ID ID::operator+(const id source)
     return [[this->object description] stringByAppendingFormat:@"%@", source];
 }
 
-ID& ID::operator+=(ID source)
+ID& ID::operator+=(id source)
 {
     [this->object autorelease];
     this->object = [[*this stringByAppendingFormat:@"%@", (id)source] retain];
