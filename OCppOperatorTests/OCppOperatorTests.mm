@@ -115,4 +115,14 @@ using namespace std;
     }
 }
 
+- (void)testComparisonOperation
+{
+    try {
+        BOOL comparison = (ID)@"comparison" == (ID)@"comparison";
+        STAssertTrue(comparison, @"operator==(id)が失敗しました");
+    } catch (exception e) {
+        STFail([NSString stringWithCString:e.what() encoding:NSUTF8StringEncoding]);
+    }
+}
+
 @end
