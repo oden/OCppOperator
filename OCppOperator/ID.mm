@@ -36,3 +36,8 @@ ID& ID::operator+=(ID source)
     this->object = [[*this stringByAppendingFormat:@"%@", (id)source] retain];
     return *this;
 }
+
+BOOL ID::operator==(const ID source)
+{
+    return [this->object isEqual:source.object];
+}

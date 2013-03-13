@@ -67,4 +67,12 @@ public:
      @return ID&
      */
     ID& operator+=(const ID);
+    /*!
+     @method operator==
+     @abstract 比較演算子オーバーロード。
+     @discussion objectフィールドのdescription文字列と引数のdescription文字列を比較する。
+     @param ID
+     @return BOOL
+     */
+    BOOL operator==(const ID);
 };
