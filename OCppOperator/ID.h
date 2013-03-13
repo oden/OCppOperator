@@ -32,9 +32,9 @@ private:
 public:
     /*!
      @method ID
-     @abstract コピーコンストラクタ。
-     @discussion 無指定の場合、nil。暗黙の型変換により、ID型を渡すこともできる。渡されたオブジェクトはretainされる。id型からの暗黙の型変換を実現している。
-     @param id
+     @abstract コンストラクタ。デフォルトコンストラクタ兼コピーコンストラクタ
+     @discussion id型からの暗黙の型変換を実現している。
+     @param id 無指定の場合、nil。暗黙の型変換により、ID型を渡すこともできる。渡されたオブジェクトはretainされる。
      */
     ID(const id = nil);
     /*!
@@ -63,8 +63,8 @@ public:
      @method operator+=
      @abstract 加算後代入演算子オーバーロード。
      @discussion objectフィールドのdescription文字列と引数のdescription文字列を結合する。
-     @param ID
+     @param id
      @return ID&
      */
-    ID& operator+=(const ID);
+    ID& operator+=(const id);
 };
