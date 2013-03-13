@@ -13,6 +13,11 @@ ID::ID(const id source)
     this->object = [source retain];
 }
 
+ID::ID(const int t)
+{
+    this->object = [@(t) retain];
+}
+
 ID::~ID()
 {
     [this->object release];
@@ -32,7 +37,7 @@ ID ID::operator+(const id source) const
 
 ID& ID::operator+=(const id source)
 {
-    [this->object autorelease];
+    [*this autorelease];
     this->object = [[*this stringByAppendingFormat:@"%@", source] retain];
     return *this;
 }
